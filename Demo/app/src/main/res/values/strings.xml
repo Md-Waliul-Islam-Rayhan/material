@@ -7,6 +7,8 @@
 
     <string name="password">PIN</string>
 
+    <string name="PIN">PIN goes here</string>
+
     <string name="summation">Summation</string>
 
     <string name="multiplication">Multiplication</string>
