@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity{
 
     TextInputEditText editText1, editText2;
     Button button1;
@@ -33,20 +33,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textView1 = findViewById(R.id.textViewID);
 
-        button1.setOnClickListener(this);
-    }
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String Number1 = editText1.getText().toString();
+                String Number2 = editText2.getText().toString();
 
-    @Override
-    public void onClick(View v) {
-        String Number1 = editText1.getText().toString();
-        String Number2 = editText2.getText().toString();
+                int num1 = Integer.parseInt(Number1);
+                int num2 = Integer.parseInt(Number2);
 
-        int num1 = Integer.parseInt(Number1);
-        int num2 = Integer.parseInt(Number2);
-
-        if(v.getId() == R.id.materialButton) {
-            int sum = num1 + num2;
-            textView1.setText("Result: " + sum);
-        }
+                if(v.getId() == R.id.materialButton) {
+                    int sum = num1 + num2;
+                    textView1.setText("Result: " + sum);
+                }
+            }
+        });
     }
 }
