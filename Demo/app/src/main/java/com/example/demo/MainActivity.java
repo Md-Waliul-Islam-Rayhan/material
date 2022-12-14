@@ -17,20 +17,17 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText editText1, editText2;
-    private Button button1;
-    private TextView textView1;
+    TextInputEditText editText1, editText2;
+    Button button1;
+    TextView textView1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        TextInputEditText phoneNumber = findViewById(R.id.phoneNumber);
-//        TextInputEditText password = findViewById(R.id.password);
-
-        editText1 = findViewById(R.id.phoneNumber);
-        editText2 = findViewById(R.id.password);
+        editText1 = findViewById(R.id.phoneNumberID);
+        editText2 = findViewById(R.id.passwordID);
 
         button1 = findViewById(R.id.materialButton);
 

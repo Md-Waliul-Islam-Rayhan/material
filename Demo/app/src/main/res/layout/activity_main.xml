@@ -76,6 +76,7 @@
             app:startIconDrawable="@drawable/ic_round_phone_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumberID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manrope_bold"
@@ -112,6 +113,7 @@
             app:startIconDrawable="@drawable/ic_round_lock_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manrope_bold"
@@ -145,7 +147,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="@string/app_name"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
